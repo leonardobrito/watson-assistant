@@ -1,0 +1,32 @@
+{
+  "name": "querido-assistant",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": {
+    "name": "Leonardo Brito",
+    "email": "f.leobrito@gmail.com",
+    "url": ""
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "node build/build.js",
+    "test": "NODE_ENV=test jest",
+    "start": "node src/index.js",
+    "dev": "NODE_ENV=development nodemon src/index.js --ignore __tests__"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "ibm-watson": "^5.4.0",
+    "morgan": "^1.9.1",
+    "node-localstorage": "^2.1.5"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
